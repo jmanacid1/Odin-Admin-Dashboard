@@ -1,3 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+    width: 100vw;
+    height: 100vh;
+}
 div{
-    color: red;
+    border-style: dashed;
+}
+.header{
+    grid-area: 1/2/span 1/span 2;
+}
+.sidebar{
+    grid-area: 1/1/span 2/ span 1;
 }
