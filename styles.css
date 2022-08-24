@@ -17,4 +17,24 @@ div{
 }
 .sidebar{
     grid-area: 1/1/span 2/ span 1;
+    display: grid;    
+    grid-template-rows: 1fr 1fr;
+}
+.sidebar-upper{
+    grid-row: 1/span 1;
+    display: grid;
+    grid-template-rows: 2fr repeat(7, 1fr);
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar-upper p{
+    align-self: start;
+}
+.sidebar-lower{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    grid-row: 2/3;
 }
