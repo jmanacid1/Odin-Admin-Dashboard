@@ -48,8 +48,12 @@ div{
 
 .dashboard{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: 2fr 1fr;
+}
+.project-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(auta-fit, minmax(200px, 1fr));
     gap: 20px;
 }
 .card{
