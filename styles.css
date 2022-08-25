@@ -54,19 +54,38 @@ div{
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
+.dashboard h3{
+    align-self: center;
+    padding-left: 25px;
+}
+
+.project-wrapper,
+.announcement-wrapper{
+    gap: 20px;
+    padding: 0px 20px 50px 20px;
+}
 .project-wrapper{
     display: grid;
     grid-template-columns: repeat(2, minmax(300px,600px));
-    grid-template-rows: repeat(3, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 50px 20px;
+    grid-template-rows: 30px repeat(3, minmax(200px, 1fr));
+    
+}
+.project-wrapper h3{
+    grid-area: 1/1/2/3;
+    justify-self: left;
+    padding-left: 0px;
+
 }
 .announcement-wrapper{
     display: grid;
     grid-template-columns: minmax(200px, 1fr);
-    grid-template-rows: 1fr 1fr;
-    gap: 20px;
-    padding: 50px 20px;
+    grid-template-rows: 30px 1fr 50px 1fr;
+}
+.announcement-wrapper h3{
+    padding-left: 0px;
+}
+.announcement-wrapper h3:nth-child(3){
+    align-self: end;
 }
 .card{
     background-color: azure;
