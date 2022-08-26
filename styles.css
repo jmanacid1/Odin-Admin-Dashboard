@@ -111,6 +111,7 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     background-color: rgb(238, 238, 238);
+    padding-top: 10px;
 }
 .dashboard h3{
     align-self: center;
@@ -134,6 +135,9 @@
     justify-self: left;
     padding-left: 0px;
 
+}
+h3{
+    font-size: x-large;
 }
 .announcement-wrapper{
     display: grid;
