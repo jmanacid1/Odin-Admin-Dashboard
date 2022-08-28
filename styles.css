@@ -9,9 +9,7 @@
     width: 100vw;
     height: 100vh;
 }
-.header div{
-    border-style: dashed;
-}
+
 .header{
     grid-area: 1/2/span 1/span 2;
 }
